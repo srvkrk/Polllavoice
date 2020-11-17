@@ -12,7 +12,7 @@ import com.Polllavoice.model.User;
 public class UserDaoImpl implements UserDao {
 	@Autowired
 	DataSource datasource;
-    @Autowired
+        @Autowired
 	JdbcTemplate jdbcTemplate;
 	public void register(User user) {
 	String sql = "insert into users values(?,?,?,?,?,?,?)";
